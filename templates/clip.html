@@ -1,0 +1,28 @@
+{% extends './base/base.html' %}
+
+{% block title %}
+{% endblock %}
+
+{% block css %}
+    {{url_for('static', filename='./styles/clip.css')}}
+{% endblock %}
+
+{% block main %}
+	<div class="main-div">
+		<div class="clip-content">
+			<div class="stream-clip">
+				<video width="1280" height="720" controls>
+					<source src="{{url_for('file', id=find_clip)}}">
+				</video>
+			</div>
+			<div class="clip-information">
+				<div class="clip-title">
+					<p>{{clip_title}}</p>
+				</div>
+				<div class="clip-views">
+					<p>{{clip_views}} views</p>
+				</div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

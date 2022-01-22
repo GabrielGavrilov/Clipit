@@ -1,0 +1,36 @@
+{% extends './base/base.html' %}
+
+{% block title %}
+{% endblock %}
+
+{% block css %}
+    {{url_for('static', filename='./styles/home.css')}}
+{% endblock %}
+
+{% block main %}
+    <div class="main-div">
+        <div class="upload-div">
+            <img src="https://img.icons8.com/material-rounded/96/4a90e2/upload-to-cloud.png"/>
+            <p class="upload-text">Simple video sharing</p>
+        </div>
+        <div class="form-div">
+            <form class="form-content" action="/upload" method="post" enctype="multipart/form-data">
+                <div class="clip-title-div">
+                    <input type="text" class="clip-title" name="clip_title" placeholder="Choose a title for your video.">
+                </div>
+                <div class="form-buttons">
+                    <label for="file-upload" class="custom-file-upload">
+                        <img class="upload-icon" src="https://img.icons8.com/fluency-systems-filled/24/ffffff/upload-document.png"/>
+                        Select video
+                    </label>
+                    <input id="file-upload" required name="clip_upload" type="file"/>
+                    <div class="form-buttons-divider"></div>
+                    <button class="upload-btn">
+                        <img class="upload-icon" src="https://img.icons8.com/material-rounded/24/ffffff/upload-to-cloud.png"/>
+                        Upload Video
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,4 @@
+{
+    "SQLALCHEMY_DB_URI": "sqlite:///clipit.db",
+    "SQLITE_DB_CONNECTION": "clipit.db"
+}

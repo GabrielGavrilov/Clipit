@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        <header>
+            <link rel="stylesheet" href="{{url_for('static', filename='./styles/header.css')}}" />
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+            <div class="blue-line"></div>
+        </header>
+        <main>
+            <link rel="stylesheet" href="{% block css %}{% endblock %}">
+            {% block main %}
+            {% endblock %}
+        </main>
+        <footer>
+            <div class="footer">
+                <a class="home-link" href="/"><p>Clipit</p></a>
+                <div class="footer-divider"></div>
+                <a class="github-link" href="https://github.com/GabrielGavrilov" target="_blank"><p>GitHub</p></a>
+            </div>
+        </footer>
+    </body>
+</html>

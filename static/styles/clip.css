@@ -1,0 +1,41 @@
+/* START OF "clip.css" */
+
+	/* main div styles */
+
+	.main-div {
+		width: 100%;
+		height: 99vh;
+		display: flex;
+		justify-content: center;
+		align-content: center;
+		align-items: center;
+	}
+
+	/* clip styles */
+
+	.stream-clip {
+		padding-bottom: 4px;
+	}
+
+	.clip-information {
+		padding-top: 4px;
+		display: flex;
+		width: 100%;
+		font-size: x-large;
+	}
+
+	.clip-title {
+		display: flex;
+		justify-content: flex-start;
+		width: 100%;
+	}
+
+	.clip-views {
+		display: flex;
+		justify-content: flex-end;
+		width: 100%;
+	}
+
+
+
+/* END OF "clip.css" */
