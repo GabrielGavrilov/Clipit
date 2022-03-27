@@ -11,7 +11,7 @@ Clipit was inspired by "Streamable" before they were bought out. So credit goes 
 ## Getting Started
 
 1) Make sure you have ``Python 3+`` and ``pip`` installed on your system.
-2) Clone or download the GitHub repository onro your system.
+2) Clone or download the GitHub repository onto your system.
 3) Open the command terminal, and change the directory into the cloned repository's folder.
 4) Run ``pip install -r requirements.txt`` into the command terminal.
 5) Once all the required liberaries are downloaded, run ``flask run`` into the command terminal.
